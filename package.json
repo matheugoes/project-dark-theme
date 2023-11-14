@@ -1,0 +1,45 @@
+{
+  "name": "project-dark-theme",
+  "displayName": "Project Dark Theme",
+  "description": "The best dark theme",
+  "version": "1.0.0",
+  "publisher": "matheugoes",
+  "author": "Matheu Góes",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "matheugoes",
+    "matheu",
+    "dark",
+    "theme"
+  ],
+  "icon": "icons/icon.png",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Project Dark Theme - Extra",
+        "uiTheme": "vs-dark",
+        "path": "./themes/project-dark-theme-extra.json"
+      },
+      {
+        "label": "Project Dark Theme - Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/project-dark-theme-soft.json"
+      }
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/matheugoes/project-dark-theme/issues",
+    "email": "matheuge@gmail.com"
+  },
+  "homepage": "https://github.com/matheugoes/project-dark-theme.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matheugoes/project-dark-theme.git"
+  }
+}
