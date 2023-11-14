@@ -1,0 +1,23 @@
+name: Workflow
+
+on:
+  push:
+    branches:
+      - main
+    tags: ['*']
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Install Dependencies
+        run: yarn global add vsce
+
+      - name: Publish Extension
+        run: vsce package && vsce publish -p ${{ secrets.VSCE_TOKEN }}
